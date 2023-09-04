@@ -1,10 +1,3 @@
-# D4RL-slim
-
-A small package for working with D4RL datasets without D4RL dependency.
-
-## Usage
-
-```python
 import d4rl_slim
 
 dataset_id = "walker2d-medium-expert-v2" # See d4rl_slim.list_datasets() for full list of available datasets
@@ -15,6 +8,5 @@ dataset = d4rl_slim.get_dataset(dataset_id)
 obs, info = env.reset()
 obs, rew, term, trunc, info = env.step(env.action_space.sample())
 
-# dataset is a dict, same as D4RL interface
+# dataset is a dict
 print(dataset.keys())
-```
