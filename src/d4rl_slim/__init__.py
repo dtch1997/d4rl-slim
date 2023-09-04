@@ -7,6 +7,7 @@ from d4rl_slim.envs import get_environment
 from d4rl_slim.infos import get_normalized_score
 from d4rl_slim.infos import list_datasets
 from d4rl_slim.tfds import get_tfds_name
+from d4rl_slim.utils import qlearning_dataset
 
 
 def register_d4rl_slim_envs():
@@ -463,6 +464,7 @@ __version__ = version("d4rl_slim")
 __all__ = [
     "get_dataset",
     "get_normalized_score",
+    "qlearning_dataset",
     "list_datasets",
     "get_tfds_name",
     "get_environment",

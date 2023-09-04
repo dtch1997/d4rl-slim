@@ -17,4 +17,6 @@ obs, rew, term, trunc, info = env.step(env.action_space.sample())
 
 # dataset is a dict, same as D4RL interface
 print(dataset.keys())
+qlearning_dataset = d4rl_slim.qlearning_dataset(env, dataset)
+print(qlearning_dataset.keys())
 ```
